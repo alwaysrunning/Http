@@ -5,12 +5,14 @@ http 是一个基于请求和响应模式的的协议；
 
 http - request:
 
-1. Request line: 
+1.Request line: 
+
 请求方法
 请求资源源
 http版本协议号；
 
 2.Request Header:
+
 Cache-Control: 客户端希望服务端是否缓存自己的请求数据（"Cache-Control: no-cache"，"Cache-Control: max-age=0"）
 
 Connect：客户端是否希望与服务端保持长时间链接（Connection: close", "Connection: keep-alive）
@@ -37,13 +39,13 @@ Content-Length：客户端以POST方法上传数据时数据体部分的内容�
 
 Content- Type：客户端发送的数据体的内容类型
 
-3. request body 
+3.request body 
 
 http - request: 
 
-1. response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
+1.response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
-2. response header :
+2.response header :
 
 Cache- Control：服务端要求中间代理及客户端如何缓存自己响应的数据，如“Cache-Control:no-cache”，如：“Cache-Control: private” 不希望被缓存，“Cache-Control: public” 可以被缓存；
 
@@ -67,7 +69,7 @@ Content-Type：服务端所返回的数据体的内容类型，如：“Content-
 
 ETag：服务端返回的响应数据的标识字段，客户端可根据此字段的值向服务器发送某URL是否更新的信息；
 
-3. response body: html...
+3.response body: html...
 
 补充：
 
