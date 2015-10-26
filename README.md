@@ -3,7 +3,7 @@
 http协议是超文本传输协议（应用层协议），在浏览器与服务器之间都是用http协议通过internet进行数据的发送和接受的。
 http 是一个基于请求和响应模式的的协议；
 
-一、http - request:
+一、http - Request:（包含Request line，Request Header，Request body）
 
 
 1.Request line: 
@@ -42,16 +42,16 @@ Content-Length：客户端以POST方法上传数据时数据体部分的内容�
 
 Content- Type：客户端发送的数据体的内容类型
 
-3.request body 
+3.Request body 
 
 
 
-二、http - request: 
+二、http - Response: （包含Response line，Response Header，Response body）
 
 
-1.response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
+1.Response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
-2.response header :
+2.Response header :
 
 Cache- Control：服务端要求中间代理及客户端如何缓存自己响应的数据，如“Cache-Control:no-cache”，如：“Cache-Control: private” 不希望被缓存，“Cache-Control: public” 可以被缓存；
 
@@ -75,7 +75,7 @@ Content-Type：服务端所返回的数据体的内容类型，如：“Content-
 
 ETag：服务端返回的响应数据的标识字段，客户端可根据此字段的值向服务器发送某URL是否更新的信息；
 
-3.response body: html...
+3.Response body: html...
 
 
 
