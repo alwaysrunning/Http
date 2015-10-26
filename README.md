@@ -39,28 +39,38 @@ Content- Type：客户端发送的数据体的内容类型
 
 3. request body 
 
+
 二、http - request: 
 
 1. response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
 2. response header :
-Cache- Control：服务端要求中间代理及客户端如何缓存自己响应的数据，如“Cache-Control: no-cache”，如：“Cache-Control: private” 不希望被缓存，“Cache-Control: public” 可以被缓存；
+Cache- Control：服务端要求中间代理及客户端如何缓存自己响应的数据，如“Cache-Control:no-cache”，如：“Cache-Control: private” 不希望被缓存，“Cache-Control: public” 可以被缓存；
+
 Connection：服务端是否希望与客户端之间保持长连接，如“Connection: close”, “Connection: keep-alive”；
+
 Date：只有当请求方法为POST或PUT方法时客户端才可能会有些字段；
+
 Pragma：包含了服务端一些特殊响应信息，如 “Pragma: no-cache” 服务端希望代理或客户端不应缓存结果数据；
-Transfer-Encoding：服务端向客户端传输数据所采用的传输模式(仅在HTTP1.1中出现)，如：“Transfer-Encoding: chunked”，注：该字段的优先级要高于“Content-Length”　字段的优先级；
-Accept-Ranges：表明服务端接收的数据单位，如：“Accept-Ranges: bytes”, ；
-Location：服务端向客户端返回此信息以使客户端进行重定向，如：“Location: http://www.hexun.com”；
+
+Transfer-Encoding：服务端向客户端传输数据所采用的传输模式(仅在HTTP1.1中出现)，如：“Transfer-Encoding:chunked”，注：该字段的优先级要高于“Content-Length”　字段的优先级；
+
+Accept-Ranges：表明服务端接收的数据单位，如：“Accept-Ranges:bytes”；Location：服务端向客户端返回此信息以使客户端进行重定向，如：“Location: http://www.hexun.com”；
+
 Server：服务端返回的用于标识自己的一些信息，如：“ Server: Microsoft-IIS/6.0”；
+
 Content-Encoding：服务端所响应数据的编码格式，如：“Content-Encoding: gzip”；
+
 Content-Length：服务端所返回数据的数据体部分的内容长度，如：“ Content-Length: 24”；
+
 Content-Type：服务端所返回的数据体的内容类型，如：“Content-Type: text/html; charset=gb2312” ；
-Set-Cookie：服务端返回给客户端的cookie数据，如：“ Set-Cookie: 
+
 ETag：服务端返回的响应数据的标识字段，客户端可根据此字段的值向服务器发送某URL是否更新的信息；
 
 3. response body: html...
 
-(补充)
+补充：
+
 tcp/ip协议是分层的，从底层至应用层分别为物理层，链路层，网络层，传输层，应用层。从应用层到底层，数据是一层层
 封装的，封装的一般方式都是在原有的数据前加一个数据控制头；
 
