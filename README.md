@@ -3,7 +3,7 @@
 http协议是超文本传输协议（应用层协议），在浏览器与服务器之间都是用http协议通过internet进行数据的发送和接受的。
 http 是一个基于请求和响应模式的的协议；
 
-一、http - request:
+http - request:
 
 1. Request line: 
 请求方法
@@ -39,8 +39,7 @@ Content- Type：客户端发送的数据体的内容类型
 
 3. request body 
 
-
-二、http - request: 
+http - request: 
 
 1. response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
