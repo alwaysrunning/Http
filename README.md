@@ -3,12 +3,15 @@
 http协议是超文本传输协议（应用层协议），在浏览器与服务器之间都是用http协议通过internet进行数据的发送和接受的。
 http 是一个基于请求和响应模式的的协议；
 
-http - request:
+一、http - request:
+
 
 1.Request line: 
 
 请求方法
+
 请求资源源
+
 http版本协议号；
 
 2.Request Header:
@@ -41,7 +44,10 @@ Content- Type：客户端发送的数据体的内容类型
 
 3.request body 
 
-http - request: 
+
+
+二、http - request: 
+
 
 1.response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
@@ -71,7 +77,11 @@ ETag：服务端返回的响应数据的标识字段，客户端可根据此字�
 
 3.response body: html...
 
-补充：
+
+
+三、补充：
+
+
 
 tcp/ip协议是分层的，从底层至应用层分别为物理层，链路层，网络层，传输层，应用层。从应用层到底层，数据是一层层
 封装的，封装的一般方式都是在原有的数据前加一个数据控制头；
