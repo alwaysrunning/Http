@@ -12,17 +12,29 @@ http版本协议号；
 
 2.Request Header:
 Cache-Control: 客户端希望服务端是否缓存自己的请求数据（"Cache-Control: no-cache"，"Cache-Control: max-age=0"）
+
 Connect：客户端是否希望与服务端保持长时间链接（Connection: close", "Connection: keep-alive）
+
 Pragma：如 "Pragma: no-cache"：希望在服务端该请求结果相关的数据不进行缓存
+
 Accept：表示客户端可接受的介质类型
+
 Accept-Charset：客户端所能识别的字符集编码格式
-Accept-Language：客户端所能识别的语言，格式：“Accept-Language: 语言1[:权重]，语言2[:权重]”，如：” Accept-Language: zh, en;q=0.7”；
+
+Accept-Language：客户端所能识别的语言，格式：“Accept-Language:语言1[:权重]，语言2[:权重]”，如：”Accept-Language: zh, en;q=0.7”；
+
 Host：客户请求的主机域名或主机IP
+
 User-Agent：表明用户所使用的浏览器标识
+
 Referer：指明该请求是从哪个关联链接而来的
+
 Accept-Encoding：客户端所能识别的编码压缩格式
-If-None-Match：该字段与客户端缓存相关，客户端发送URL请求的同时发送该字段及标识，如 果服务端的标识与客户端的标识一致，则返回304表明此URL未修改过，如果不一致则服务端返回完整的数据信息，如：“If-None-Match: 0f0a893aad8c61:253, 0f0a893aad8c61:252, 0f0a893aad8c61:251”；
-Content-Length：客户端以POST方法上传数据时数据体部分的内容长度，如：“ Content-Length: 24”；Content- Type：客户端发送的数据体的内容类型
+
+If-None-Match：该字段与客户端缓存相关，客户端发送URL请求的同时发送该字段及标识，如果服务端的标识与客户端的标识一致，则返回304表明此URL未修改过，如果不一致则服务端返回完整的数据信息，如：“If-None-Match:0f0a893aad8c61:253,0f0a893aad8c61:252, 0f0a893aad8c61:251”；
+
+Content-Length：客户端以POST方法上传数据时数据体部分的内容长度，如：“Content-Length:24”；Content-Type：客户端发送的数据体的内容类型
+
 Content- Type：客户端发送的数据体的内容类型
 
 3. request body 
