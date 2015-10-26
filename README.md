@@ -45,6 +45,7 @@ Content- Type：客户端发送的数据体的内容类型
 1. response line: 响应状态 200成功  304not modified  403服务器拒绝提供服务  404not found
 
 2. response header :
+
 Cache- Control：服务端要求中间代理及客户端如何缓存自己响应的数据，如“Cache-Control:no-cache”，如：“Cache-Control: private” 不希望被缓存，“Cache-Control: public” 可以被缓存；
 
 Connection：服务端是否希望与客户端之间保持长连接，如“Connection: close”, “Connection: keep-alive”；
